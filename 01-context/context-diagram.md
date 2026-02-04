@@ -7,24 +7,25 @@ It is intentionally simplified to focus on interfaces, responsibilities, and del
 
 ## 1) System context (high-level)
 
-+––––––––––+       (LTE / Fiber)        +—————————+
-|   Roadside Site    |  TLS and/or VPN over IP    |   Central Platforms       |
-|––––––––––|––––––––––––––>|—————————|
-| - Sensors / Cameras|                             | 1) Device Management      |
-| - RSU / Transmitter|                             |   - inventory & status    |
-| - Edge Compute     |                             |   - telemetry & alerts    |
-| - Local Storage    |                             |   - config distribution   |
-| - Site Router/Modem|                             |   - software deployment   |
-+––––––––––+                             |   - rollback execution    |
-|                                          |   - logs collection       |
-| (field access)                           |                           |
-|                                          | 2) Business Backend       |
-v                                          |   - event ingestion API   |
-+––––––––––+                             |   - rules/processing      |
-| Field Engineering  |                             |   - reporting/audit       |
-| (install/commission|                             +—————————+
-|  maintenance)      |
-+––––––––––+
+```text
++-------------------+       TLS/VPN over IP       +----------------------+
+|  Roadside Site    |  (LTE / Fiber connectivity) |   Central Platforms  |
+|-------------------|---------------------------->|----------------------|
+| - Sensors/Cameras |                             |  Device Management   |
+| - RSU/Radio       |                             |  - telemetry/alerts  |
+| - Edge Compute    |                             |  - config mgmt       |
+| - Local Storage   |                             |  - deploy/rollback   |
+| - Router/Modem    |                             |  - logs/diagnostics  |
++-------------------+                             |                      |
+        |                                         |  Business Backend    |
+        | field access                            |  - event ingestion   |
+        v                                         |  - processing/rules  |
++-------------------+                             |  - reporting/audit   |
+| Field Engineering |                             +----------------------+
+| install/commission|
+| maintenance       |
++-------------------+
+
 
 ### Two key data flows
 1) **Operational flow** (for running the system)
