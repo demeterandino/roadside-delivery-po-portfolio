@@ -33,7 +33,7 @@ It focuses on **delivery discipline** (scope, risks, rollouts), **operability** 
 
 ---
 
-## Start here (5–7 minutes)
+## Start here
 
 1) **Context & system boundaries**  
    - [Context diagram](01-context/context-diagram.md)
