@@ -40,7 +40,7 @@ It focuses on **delivery discipline** (scope, risks, rollouts), **operability** 
 
 2) **Product framing (vision, KPIs, roadmap)**  
    - [Vision & objectives](02-product/vision-and-objectives.md)  
-   - [KPIs & SLOs](02-product/kpis-and-slas.md)  
+   - [KPIs & SLAs](02-product/kpis-and-slas.md)  
    - [Roadmap (Now/Next/Later)](02-product/roadmap.md)
 
 3) **Backlog examples (user stories with acceptance criteria)**  
