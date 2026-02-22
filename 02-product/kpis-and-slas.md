@@ -1,6 +1,6 @@
-# KPIs & SLOs (Roadside Delivery)
+# KPIs & SLAs (Roadside Delivery)
 
-This document defines a simple KPI set for a roadside delivery product and illustrates how SLO-style targets can be used
+This document defines a simple KPI set for a roadside delivery product and illustrates how SLA-style targets can be used
 to drive Go/No-Go decisions during canary/pilot and to guide continuous improvement during operations.
 
 > Note: Thresholds below are illustrative for portfolio purposes. Real targets are agreed per customer, site type, and regulatory context.
@@ -22,7 +22,7 @@ Good roadside KPIs should:
 **Definition:** percentage of time a site/device is operational (healthy and delivering expected signals/events).  
 **Why it matters:** outages directly impact service, data completeness, and SLA commitments.
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - Canary/Pilot cohort availability ≥ 99.5% over the observation window
 
 ---
@@ -31,8 +31,8 @@ Good roadside KPIs should:
 **Definition:** time from event occurrence at roadside to successful availability in the central backend for processing.  
 **Why it matters:** high lag can indicate connectivity or processing bottlenecks and may affect downstream matching/processing.
 
-**Example SLO (illustrative):**
-- Median < 2s; p95 < 10s during pilot
+**Example SLA (illustrative):**
+- typical  < 2s; Almost always < 10s during pilot
 
 ---
 
@@ -40,7 +40,7 @@ Good roadside KPIs should:
 **Definition:** percentage of events that are expected but never arrive to the backend (not just delayed).  
 **Why it matters:** lost events can lead to incorrect outcomes and loss of trust.
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - < 0.1% dropped events; alert on spikes above threshold
 
 ---
@@ -54,7 +54,7 @@ Good roadside KPIs should:
 
 **Why it matters:** shows integration health and helps distinguish device-side vs backend-side issues.
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - 5xx < 0.5% during pilot; sustained spikes trigger rollout pause
 
 ---
@@ -63,7 +63,7 @@ Good roadside KPIs should:
 **Definition:** proportion of events received that are duplicates (same event_id).  
 **Why it matters:** duplicates are normal with retries; the key is that duplicates do not create double processing.
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - Duplicate rate tracked and explained; sudden spikes indicate connectivity/retry behavior issues
 
 ---
@@ -72,7 +72,7 @@ Good roadside KPIs should:
 **Definition:** share of devices/sites in a cohort that required rollback after activation.  
 **Why it matters:** a high rollback rate suggests release instability or variant incompatibilities.
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - < 5% rollback rate in canary/pilot cohorts
 
 ---
@@ -81,7 +81,7 @@ Good roadside KPIs should:
 **Definition:** incident count and severity trend attributable to a release or a component.  
 **Why it matters:** incidents are the real-world “quality signal” for field systems.
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - No Sev1 attributable to the release during the pilot observation window
 
 ---
@@ -90,7 +90,7 @@ Good roadside KPIs should:
 **Definition:** average time to restore service after an outage/incident.  
 **Why it matters:** affects SLA performance and operational cost.
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - MTTR for cohort incidents trending downward release-over-release
 
 ---
@@ -101,7 +101,7 @@ Good roadside KPIs should:
 **Read-rate:** percentage of passings where an identifier/classification is successfully produced.  
 **Accuracy:** percentage of produced results that are correct (validated sample).
 
-**Example SLO (illustrative):**
+**Example SLA (illustrative):**
 - Targets agreed per environment (day/night, weather), measured consistently and audited.
 
 ---
