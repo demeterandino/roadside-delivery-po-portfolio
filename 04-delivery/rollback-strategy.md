@@ -68,7 +68,7 @@ Devices must report:
 
 Rollback should be initiated when:
 - a Sev1 incident is attributed to the release
-- cohort KPIs breach agreed thresholds for a sustained period
+- certain KPIs breach agreed thresholds for a sustained period
 - stability issues affect critical devices/sites
 - deployment failure rate exceeds threshold in canary/pilot
 
@@ -94,7 +94,7 @@ Typical signals:
 
 ## 6) Rollback execution checklist (practical)
 
-- [ ] Confirm affected cohort and variants (hardware/firmware/app)
+- [ ] Confirm affected groups and variants (hardware/firmware/app)
 - [ ] Confirm rollback target version is available and approved
 - [ ] Ensure rollback action is authorized (RBAC) and logged
 - [ ] Execute rollback in a controlled order (small batch first if needed)
