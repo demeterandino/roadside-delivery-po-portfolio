@@ -23,7 +23,7 @@ Good roadside KPIs should:
 **Why it matters:** outages directly impact service, data completeness, and SLA commitments.
 
 **Example SLA (illustrative):**
-- Canary/Pilot cohort availability ≥ 99.5% over the observation window
+- Canary/Pilot group availability ≥ 99.5% over the observation window
 
 ---
 
@@ -69,11 +69,11 @@ Good roadside KPIs should:
 ---
 
 ### F) Rollback rate
-**Definition:** share of devices/sites in a cohort that required rollback after activation.  
+**Definition:** share of devices/sites in a release that required rollback after activation.  
 **Why it matters:** a high rollback rate suggests release instability or variant incompatibilities.
 
 **Example SLA (illustrative):**
-- < 5% rollback rate in canary/pilot cohorts
+- < 5% rollback rate in canary/pilot items
 
 ---
 
@@ -91,7 +91,7 @@ Good roadside KPIs should:
 **Why it matters:** affects SLA performance and operational cost.
 
 **Example SLA (illustrative):**
-- MTTR for cohort incidents trending downward release-over-release
+- MTTR for incidents trending downward release-over-release
 
 ---
 
@@ -128,7 +128,7 @@ To measure these KPIs, ensure:
 - devices emit heartbeat/telemetry (online status, version tags)
 - ingestion pipeline logs event_id and outcomes (success/duplicate/errors)
 - metrics are tagged by device_id, site_id, version, and variant identifiers
-- dashboards support cohort views (canary vs pilot vs production)
+- dashboards support stages views (canary vs pilot vs production)
 
 ---
 
