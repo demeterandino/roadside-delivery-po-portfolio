@@ -48,11 +48,3 @@ predictable performance and minimal operational effort.
 - Full UI/UX design of operations dashboards
 - Vendor-specific hardware specifications
 
----
-
-## 6) How this maps to delivery artifacts
-- Context and boundaries: `01-context/context-diagram.md`
-- Acceptance gates (FAT/SAT/UAT): `05-quality/acceptance-gates.md`
-- Rollout/rollback strategy: `04-delivery/rollback-strategy.md`
-- Variant governance: `07-variants/variant-matrix.md`
-- Backlog examples: `03-backlog/stories/`
