@@ -14,7 +14,7 @@ predictable performance and minimal operational effort.
 ## 2) Target users / stakeholders (who this serves)
 
 ### Primary
-- **Operations / NOC**: needs stable devices, clear health signals, fast recovery
+- **Operations**: needs stable devices, clear health signals, fast recovery
 - **Field Engineering**: needs repeatable installation and commissioning with clear checklists
 - **Customer / Authority stakeholders**: needs acceptance readiness, auditability, predictable rollouts
 
