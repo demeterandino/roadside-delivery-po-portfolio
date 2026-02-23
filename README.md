@@ -72,7 +72,7 @@ It focuses on **delivery discipline** (scope, risks, rollouts), **operability** 
 ## Repository structure
 
 - `01-context/` — context diagram and system boundaries
-- `02-product/` — vision, objectives, KPIs/SLOs, roadmap
+- `02-product/` — vision, objectives, KPIs/SLAs, roadmap
 - `03-backlog/` — story template and sample user stories
 - `04-delivery/` — rollback strategy and change management
 - `05-quality/` — FAT/SAT/UAT approach and acceptance gates
@@ -88,10 +88,3 @@ It focuses on **delivery discipline** (scope, risks, rollouts), **operability** 
 - Connectivity may be intermittent → buffering, retries, and idempotent ingestion are required
 - Mixed versions exist during rollouts → compatibility rules are essential
 
----
-
-## How I would use this in an interview
-I use these artifacts to explain:
-- how I translate stakeholder needs into a **prioritized backlog** with testable acceptance criteria,
-- how I drive **release readiness** and safe rollouts,
-- how I align delivery with **operability and measurable KPIs**.
