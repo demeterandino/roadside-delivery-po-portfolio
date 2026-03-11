@@ -97,7 +97,7 @@ Good roadside KPIs should:
 
 ## 3) Optional domain KPIs (if applicable)
 
-### Read-rate / accuracy (e.g., ANPR/classification)
+### Read-rate / accuracy (e.g. classification)
 **Read-rate:** percentage of passings where an identifier/classification is successfully produced.  
 **Accuracy:** percentage of produced results that are correct (validated sample).
 
